@@ -1,0 +1,18 @@
+/* index.css ou App.css */
+
+@font-face {
+  font-family: 'ONEDAY';
+  src: url('fonts/ONEDAY.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'SourceCodePro';
+  src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
+}
+
+
+body {
+  background-color: #071422;
+  font-family: 'ONEDAY', sans-serif;
+}
+

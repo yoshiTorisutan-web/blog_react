@@ -11,8 +11,17 @@ import {
 } from "mdb-react-ui-kit";
 
 const Footer = () => {
+  const footerStyle = {
+    backgroundColor: "#0b1e30",
+    fontFamily: "SourceCodePro",
+  };
+
   return (
-    <MDBFooter className="text-center" color="white" bgColor="dark">
+    <MDBFooter
+      className="text-center"
+      style={footerStyle}
+      color="white"
+    >
       <MDBContainer className="p-4">
         <section className="mb-4">
           <MDBBtn

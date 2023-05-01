@@ -3,6 +3,11 @@ import { Container, Row } from "react-bootstrap";
 import apiService from "../services/apiService";
 
 const CommentList = () => {
+
+  const TextStyle = {
+    color: "#ffffff", // Remplacez "#ffffff" par votre couleur personnalisée pour les liens
+  };
+
   const [comments, setComments] = useState([]);
 
   useEffect(() => {
@@ -21,7 +26,7 @@ const CommentList = () => {
   return (
     <Container>
       <Row className="mt-5 mb-10">
-        <h2 className="mt-4 mb-3">Commentaires</h2>
+        <h2 className="mt-4 mb-3" style={TextStyle}>Commentaires</h2>
         <ul className="list-group">
           {comments.map((comment) => (
             <li key={comment._id} className="list-group-item">
