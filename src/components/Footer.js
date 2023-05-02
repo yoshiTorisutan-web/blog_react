@@ -1,9 +1,10 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faGithub, faGoogle, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 import {
   MDBFooter,
   MDBContainer,
-  MDBIcon,
   MDBInput,
   MDBCol,
   MDBRow,
@@ -32,7 +33,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="facebook-f" />
+            <FontAwesomeIcon icon={faFacebook} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
 
           <MDBBtn
@@ -43,7 +44,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="twitter" />
+            <FontAwesomeIcon icon={faTwitter} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
 
           <MDBBtn
@@ -54,7 +55,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="google" />
+            <FontAwesomeIcon icon={faGoogle} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
 
           <MDBBtn
@@ -65,7 +66,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="instagram" />
+            <FontAwesomeIcon icon={faInstagram} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
 
           <MDBBtn
@@ -76,7 +77,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="linkedin-in" />
+            <FontAwesomeIcon icon={faLinkedinIn} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
 
           <MDBBtn
@@ -87,7 +88,7 @@ const Footer = () => {
             href="#!"
             role="button"
           >
-            <MDBIcon fab icon="github" />
+            <FontAwesomeIcon icon={faGithub} size="2x" style={{ marginTop: '5px' }} />
           </MDBBtn>
         </section>
 

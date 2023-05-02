@@ -1,5 +1,6 @@
 /* index.css ou App.css */
 
+/*Police personnalisé*/
 @font-face {
   font-family: 'ONEDAY';
   src: url('fonts/ONEDAY.ttf') format('truetype');
@@ -10,9 +11,28 @@
   src: url('fonts/SourceCodePro-VariableFont_wght.ttf') format('truetype');
 }
 
-
+/*Arrière-plan personnalisé*/
 body {
   background-color: #071422;
   font-family: 'ONEDAY', sans-serif;
 }
+
+/* Scrollbar personnalisé */
+::-webkit-scrollbar {
+  width: 10px; /* largeur de la scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #071422; /* couleur de l'arrière-plan de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3294f8; /* couleur de la poignée de la scrollbar */
+  border-radius: 5px; /* bordure arrondie de la poignée */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1288ff; /* couleur de la poignée au survol */
+}
+
 
