@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import logoImage from "../assets/blogger.png";
@@ -41,6 +41,14 @@ const Header = () => {
           <Nav className="me-auto">
             <Nav.Link
               as={Link}
+              to="/"
+              style={linkStyle}
+              activeStyle={linkHoverStyle}
+            >
+              Accueil
+            </Nav.Link>
+            <Nav.Link
+              as={Link}
               to="/articles"
               style={linkStyle}
               activeStyle={linkHoverStyle}
@@ -57,13 +65,24 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link
               as={Link}
+              to="/contact"
+              style={linkStyle}
+              activeStyle={linkHoverStyle}
+            >
+              Contact
+            </Nav.Link>
+          </Nav>
+          <Navbar.Text pullRight>
+            <Button
+              variant="primary"
+              as={Link}
               to="/login"
               style={linkStyle}
               activeStyle={linkHoverStyle}
             >
-              Connexion
-            </Nav.Link>
-          </Nav>
+              Se connecter
+            </Button>
+          </Navbar.Text>
         </Navbar.Collapse>
       </Container>
     </Navbar>

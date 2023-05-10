@@ -8,6 +8,7 @@ import CommentList from './views/CommentList';
 import CommentForm from './views/CommentForm';
 import LoginForm from './views/LoginForm';
 import Home from './views/Home';
+import ContactForm from './views/ContactForm';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ const AppRoutes = () => {
         <Route exact path="/articles/:id" element={<Article />} />
         <Route exact path="/comments" element={<CommentList />} />
         <Route exact path="/comments/new" element={<CommentForm />} />
+        <Route exact path="/contact" element={<ContactForm />} />
         <Route exact path="/login" element={<LoginForm />} />
       </Routes>
       <Footer />

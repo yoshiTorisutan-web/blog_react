@@ -8,6 +8,10 @@ const LoginForm = () => {
     color: "#ffffff", // Remplacez "#ffffff" par votre couleur personnalisée pour les liens
   };
 
+  const FontStyle = {
+    fontFamily: "SourceCodePro",
+  };
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -22,7 +26,7 @@ const LoginForm = () => {
   };
 
   return (
-    <Container>
+    <Container className="d-flex justify-content-center align-items-center">
       <Row className="mt-5 mb-10">
         <h2 className="mt-4 mb-3" style={TextStyle}>Connexion</h2>
         <Form onSubmit={handleSubmit}>
@@ -30,11 +34,12 @@ const LoginForm = () => {
             <Form.Label style={TextStyle}>Utilisateur</Form.Label>
             <Form.Control
               type="text"
+              style={FontStyle}
               placeholder="Nom d'utilisateur"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
             />
-            <Form.Text className="text-muted" style={TextStyle}>
+            <Form.Text className="text-muted" style={FontStyle}>
               Nous ne partagerons jamais votre e-mail avec quelqu'un d'autre.
             </Form.Text>
           </Form.Group>
@@ -43,6 +48,7 @@ const LoginForm = () => {
             <Form.Label style={TextStyle}>Mot de passe</Form.Label>
             <Form.Control
               type="password"
+              style={FontStyle}
               placeholder="Mot de passe"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
