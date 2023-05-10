@@ -192,9 +192,9 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <p href="#!" className="text-white">
+                  <a href="#!" className="text-white">
                     05 64 52 76 23
-                  </p>
+                  </a>
                 </li>
                 <li>
                   <a href="#!" className="text-white">
@@ -203,7 +203,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a href="#!" className="text-white">
-                    Copyright © 2023 blog_react
+                    Projet React
                   </a>
                 </li>
               </ul>

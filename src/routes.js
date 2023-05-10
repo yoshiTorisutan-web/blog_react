@@ -7,6 +7,7 @@ import Article from './views/Article';
 import CommentList from './views/CommentList';
 import CommentForm from './views/CommentForm';
 import LoginForm from './views/LoginForm';
+import SiteSettings from './views/Settings';
 import Home from './views/Home';
 import ContactForm from './views/ContactForm';
 import Header from './components/Header';
@@ -24,6 +25,7 @@ const AppRoutes = () => {
         <Route exact path="/comments/new" element={<CommentForm />} />
         <Route exact path="/contact" element={<ContactForm />} />
         <Route exact path="/login" element={<LoginForm />} />
+        <Route exact path="/settings" element={<SiteSettings />} />
       </Routes>
       <Footer />
     </Router>

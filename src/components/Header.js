@@ -3,6 +3,7 @@ import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 import logoImage from "../assets/blogger.png";
+import logoSettings from "../assets/cogwheel.png";
 
 const Header = () => {
   const headerStyle = {
@@ -22,6 +23,12 @@ const Header = () => {
     width: "50px", // Ajustez la largeur de l'image selon vos besoins
     height: "50px", // Ajustez la hauteur de l'image selon vos besoins
     marginRight: "15px", // Ajoutez la marge à droite du texte (10px dans cet exemple)
+  };
+
+  const logoStyleSettings = {
+    width: "20px", // Ajustez la largeur de l'image selon vos besoins
+    height: "20px", // Ajustez la hauteur de l'image selon vos besoins
+    marginLeft: "15px", // Ajoutez la marge à droite du texte (10px dans cet exemple)
   };
 
   return (
@@ -83,6 +90,14 @@ const Header = () => {
               Se connecter
             </Button>
           </Navbar.Text>
+          <Navbar.Brand as={Link} to="/settings" style={linkStyle}>
+          <img
+            src={logoSettings}
+            alt="Logo"
+            className="logo-image"
+            style={logoStyleSettings}
+          />
+        </Navbar.Brand>
         </Navbar.Collapse>
       </Container>
     </Navbar>

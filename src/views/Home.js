@@ -4,6 +4,9 @@ import { Card, Button, Container, Row, Col } from "react-bootstrap";
 import ReactImage from "../assets/react.jpg";
 import ProjectImage from "../assets/project_react.jpg";
 import BiblioImage from "../assets/biblio_react.png";
+import TutorialsImage from "../assets/tutorials_react.png";
+import GoodPracticesImage from "../assets/good_practices_react.png";
+import VersionsImage from "../assets/versions_react.jpg";
 
 function Home() {
   return (
@@ -51,10 +54,10 @@ function Home() {
       <Row className="mb-10">
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={ReactImage} />
+            <Card.Img variant="top" src={TutorialsImage} />
             <Card.Body>
-              <Card.Title>Qu'est-ce que React ?</Card.Title>
-              <Card.Text>Presentation du framework JS</Card.Text>
+              <Card.Title>Tutorials React</Card.Title>
+              <Card.Text>Les meilleurs tutos pour les developpeurs</Card.Text>
               <Button className="mt-5" variant="primary">
                 Lire la suite
               </Button>
@@ -63,10 +66,10 @@ function Home() {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={ProjectImage} />
+            <Card.Img variant="top" src={GoodPracticesImage} />
             <Card.Body>
-              <Card.Title>Projets React</Card.Title>
-              <Card.Text>Exemple de projets React pour bien debuter</Card.Text>
+              <Card.Title>Bonnes pratiques sur React</Card.Title>
+              <Card.Text>Mettez en place les bonnes pratiques</Card.Text>
               <Button className="mt-5" variant="primary">
                 Lire la suite
               </Button>
@@ -75,11 +78,11 @@ function Home() {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src={BiblioImage} />
+            <Card.Img variant="top" src={VersionsImage} />
             <Card.Body>
-              <Card.Title>Bibliotheque React</Card.Title>
+              <Card.Title>Dernieres versions React</Card.Title>
               <Card.Text>
-                Bibliotheque de composants React a installer
+                Soyez a jour des dernieres versions
               </Card.Text>
               <Button className="mt-5" variant="primary">
                 Lire la suite
