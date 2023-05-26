@@ -1,16 +1,10 @@
-const mongoose = require('mongoose');
-
-const articleSchema = new mongoose.Schema({
-  title: {
-    type: String,
-    required: true
-  },
-  content: {
-    type: String,
-    required: true
+class Article {
+  constructor(id, title, content, userId) {
+    this.id = id;
+    this.title = title;
+    this.content = content;
+    this.userId = userId;
   }
-});
+}
 
-const Article = mongoose.model('Article', articleSchema);
-
-module.exports = Article;
+export default Article;

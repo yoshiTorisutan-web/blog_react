@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
-
-const commentSchema = new mongoose.Schema({
-  content: {
-    type: String,
-    required: true
+class Comment {
+  constructor(id, content, userId, articleId) {
+    this.id = id;
+    this.content = content;
+    this.userId = userId;
+    this.articleId = articleId;
   }
-});
+}
 
-const Comment = mongoose.model('Comment', commentSchema);
+export default Comment;
 
-module.exports = Comment;
